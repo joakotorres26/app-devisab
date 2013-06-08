@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+
+<!-- Home -->
+<div data-role="page" id="noticias">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Noticias
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <label for="textarea1">
+                Twitter
+            </label>
+            <textarea name="" id="textarea1" placeholder=""></textarea>
+        </div>
+   </div>
+   <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme=""data-icon="" class="ui-btn-active ui-state-persist">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme=""data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme=  ""data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme=
+"" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme=  "" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Home -->
+<div data-role="page" id="tarifas">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Tarifas
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="e" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Peajes
+            </li>
+            <li data-theme="c">
+                <a href="#tebaida" data-transition="slide">
+                    La Tebaida
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#mondoñedo" data-transition="slide">
+                    Mondoñedo &amp; Ramal
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#san pedro" data-transition="slide">
+                    San Pedro
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#pubenza" data-transition="slide">
+                    Pubenza
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme=""data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme=""data-icon=""class="ui-btn-active ui-state-persist">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme=  ""data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme=
+"" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme=  "" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Home -->
+<div data-role="page" id="tebaida">
+    <div data-theme="e" data-role="header">
+        <a data-role="button" href="#tarifas" data-icon="back" data-iconpos="left"
+        class="ui-btn-left">
+            volver
+        </a>
+        <h3>
+            Tebaida
+        </h3>
+    </div>
+    <div data-role="content">
+       <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+     <thead>
+       <tr>
+         <th data-priority="2">Categoria</th>
+         <th>Descripción</th>
+         <th data-priority="3">Valor</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th>I</th>
+         <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Automoviles y camionetas</a></td>
+         <td>9.000</td>
+       </tr>
+       <tr>
+         <th>II</th>
+         <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Buses</a></td>
+         <td>10.700</td>
+       </tr>
+       <tr>
+         <th>III</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">Furgones de llanta pequeña</a></td>
+         <td>10.700</td>
+       </tr>
+       <tr>
+         <th>IV</th>
+         <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Camiones de llanta grande</a></td>
+         <td>12.400</td>
+         </tr>
+       <tr>
+         <th>V</th>
+         <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Vehiculos de 3 y 4 ejes</a></td>
+         <td>27.600</td>
+      </tr>
+       <tr>
+         <th>VI</th>
+         <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Vehiculos de 5 ejes</a></td>
+         <td>33.900</td>
+      </tr>
+       <tr>
+         <th>VII</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">Vehiculos de 6 o mas ejes</a></td>
+         <td>36.000</td>
+       </tr>
+       <tr>
+         <th>IEPA</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">IC especial particular</a></td>
+         <td>7.700</td>
+       </tr>
+       <tr>
+         <th>IIEPU</th>
+         <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">IIC especial publica</a></td>
+         <td>8.000</td>
+        </tr>
+       <tr>
+         <th>IIIEPU</th>
+         <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">IIIC especial publica</a></td>
+         <td>9.100</td>
+       </tr>
+       <th>IVEPA</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">IVC especial particular</a></td>
+         <td>10.600</td>
+       </tr>
+       <tr>
+     </tbody>
+   </table>
+   
+</div>
+    <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme="" data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme="" data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme="" data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme="" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme="" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="mondoñedo">
+    <div data-theme="e" data-role="header">
+        <a data-role="button" href="#tarifas" data-icon="back" data-iconpos="left"
+        class="ui-btn-left">
+            volver
+        </a>
+        <h3>
+            Mondoñedo &amp; Ramal
+        </h3>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme="" data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme="" data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme="" data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme="" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme="" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="san pedro">
+    <div data-theme="e" data-role="header">
+        <a data-role="button" href="#tarifas" data-icon="back" data-iconpos="left"
+        class="ui-btn-left">
+            volver
+        </a>
+        <h3>
+            San Pedro
+        </h3>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme="" data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme="" data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme="" data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme="" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme="" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pubenza">
+    <div data-theme="e" data-role="header">
+        <a data-role="button" href="#tarifas" data-icon="back" data-iconpos="left"
+        class="ui-btn-left">
+            volver
+        </a>
+        <h3>
+            Pubenza
+        </h3>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme="" data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme="" data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme="" data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme="" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme="" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="servicios">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Servicios
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="ICONS/5661033-una-variedad-de-siluetas-de-vehiculos-ilustracion-camion-coche-autobus.jpg">
+        <h2>Grua</h2>
+        <p>24 Horas</p></a>
+    </li>
+    <li><a href="#">
+        <img src="ICONS/ambulancia.jpg">
+        <h2>Ambulancia</h2>
+        <p>24 Horas</p></a>
+    </li>
+    <li><a href="#">
+        <img src="ICONS/taller.jpg">
+        <h2>Carro taller</h2>
+        <p>24 Horas</p></a>
+    </li>
+     <li><a href="#">
+        <img src="ICONS/cama.jpg">
+        <h2>Cama baja</h2>
+        <p>24 Horas</p></a>
+    </li>
+     <li><a href="#">
+        <img src="ICONS/policia.jpg">
+        <h2>Policia de Carreteras</h2>
+        <p>24 Horas</p></a>
+    </li>
+</ul>
+   <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme=""data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme=""data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme=  ""data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme=  "" data-icon=""class="ui-btn-active ui-state-persist">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme=  "" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="ubicacion">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Ubicación
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="ICONS/5661033-una-variedad-de-siluetas-de-vehiculos-ilustracion-camion-coche-autobus.jpg">
+        <h2>Grua</h2>
+        <p>24 Horas</p></a>
+    </li>
+    <li><a href="#">
+        <img src="ICONS/ambulancia.jpg">
+        <h2>Ambulancia</h2>
+        <p>24 Horas</p></a>
+    </li>
+    <li><a href="#">
+        <img src="ICONS/taller.jpg">
+        <h2>Carro taller</h2>
+        <p>24 Horas</p></a>
+    </li>
+     <li><a href="#">
+        <img src="ICONS/cama.jpg">
+        <h2>Cama baja</h2>
+        <p>24 Horas</p></a>
+    </li>
+     <li><a href="#">
+        <img src="ICONS/policia.jpg">
+        <h2>Policia de Carreteras</h2>
+        <p>24 Horas</p></a>
+    </li>
+</ul>
+   <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme=""data-icon="">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme=""data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme=  ""data-icon=""class="ui-btn-active ui-state-persist">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme=  "" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme=  "" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+ 
+<div data-role="page" id="ubicacion">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Ubicación
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <label for="textarea1">
+                Twitter
+            </label>
+            <textarea name="" id="textarea1" placeholder=""></textarea>
+        </div>
+   </div>
+   <div data-theme="a" data-role="footer"data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#noticias" data-transition="fade" data-theme=""data-icon="" class="ui-btn-active ui-state-persist">
+                        Noticias
+                    </a>
+                </li>
+                <li>
+                    <a href="#tarifas" data-transition="fade" data-theme=""data-icon="">
+                        Tarifas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ubicacion" data-transition="fade" data-theme=  ""data-icon="">
+                        Ubicación
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" data-transition="fade" data-theme=
+"" data-icon="">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#turismo" data-transition="fade" data-theme=  "" data-icon="">
+                        Turismo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
