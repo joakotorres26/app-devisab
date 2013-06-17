@@ -3,12 +3,24 @@
 <head>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+$(function() {
+    	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		var onSuccess = function(position) {
+           	     var yourStartLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            	 $('#map_canvas').gmap({'center': yourStartLatLng});
+				 $('#map_canvas').gmap('addMarker', {'position': clientPosition, 'bounds': true});
+		}
+});
+</script>
 <title>Documento sin título</title>
 </head>
+< 
 
 <body>
 
@@ -182,7 +194,7 @@
             </tr>
             </tbody>
         </table>
-    </div>
+	</div>
     <div data-theme="a" data-role="footer" data-position="fixed">
         <div data-role="navbar" data-iconpos="top">
             <ul>
@@ -565,9 +577,9 @@
         <h3>
             Ubicación
         </h3>
-    </div>
+        </div>
     <div data-role="content" id="mapa-ubicacion">
-<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202384618868687062152.0004deac6218d9d15eaac&amp;ie=UTF8&amp;ll=4.750255,-74.163208&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br /><small>Ver <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=202384618868687062152.0004deac6218d9d15eaac&amp;ie=UTF8&amp;ll=4.750255,-74.163208&amp;spn=0,0&amp;t=m&amp;source=embed" style="color:#0000FF;text-align:left">Turismo</a> en un mapa más grande</small>
+<iframe width="100%" height="90%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202384618868687062152.0004deac6218d9d15eaac&amp;ie=UTF8&amp;ll=4.750255,-74.163208&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br /><small>Ver <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=202384618868687062152.0004deac6218d9d15eaac&amp;ie=UTF8&amp;ll=4.750255,-74.163208&amp;spn=0,0&amp;t=m&amp;source=embed" style="color:#0000FF;text-align:left">Turismo</a> en un mapa más grande</small>
 	</div>
    <div data-theme="a" data-role="footer" data-position="fixed">
         <div data-role="navbar" data-iconpos="top">
@@ -617,27 +629,27 @@
     <div data-role="content">
     <ul data-role="listview" data-inset="true">
     <li><a href="#">
-        <img src="iconos/5661033-una-variedad-de-siluetas-de-vehiculos-ilustracion-camion-coche-autobus.jpg">
+        <img src="iconos/hoteles.jpg">
         <h2>Hoteles</h2>
         <p>24 Horas</p></a>
     </li>
     <li><a href="#">
-        <img src="iconos/ambulancia.jpg">
+        <img src="iconos/comidas.jpg">
         <h2>Restaurantes</h2>
         <p>24 Horas</p></a>
     </li>
     <li><a href="#">
-        <img src="iconos/taller.jpg">
+        <img src="iconos/gasolina.jpg">
         <h2>Estaciones de Servicio</h2>
         <p>24 Horas</p></a>
     </li>
      <li><a href="#">
-        <img src="iconos/cama.jpg">
+        <img src="iconos/can-stock-photo_csp13257709.jpg">
         <h2>Parques</h2>
         <p>24 Horas</p></a>
     </li>
      <li><a href="#">
-        <img src="iconos/policia.jpg">
+        <img src="iconos/cai.jpg">
         <h2>Estaciones de Policia</h2>
         <p>24 Horas</p></a>
     </li>
