@@ -12,7 +12,7 @@
 	<icon src="icons/hdpi.png" gap:platform="android" gap:density="hdpi" /><!-- Este icono es de 72x72 px -->
 	<icon src="icons/xhdpi.png" gap:platform="android" gap:density="xhdpi" /><!-- Este icono es de 96x96 px -->
 	
-	<preference name="splash-screen-duration" value="10000"/>
+	<preference name="splash-screen-duration" value="90000"/>
 	<gap:splash src="splash/ldpi.png" gap:platform="android" gap:density="ldpi" />
 	<gap:splash src="splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="splash/hdpi.png" gap:platform="android" gap:density="hdpi" />
