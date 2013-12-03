@@ -12,6 +12,16 @@
 	<icon src="icons/hdpi.png" gap:platform="android" gap:density="hdpi" /><!-- Este icono es de 72x72 px -->
 	<icon src="icons/xhdpi.png" gap:platform="android" gap:density="xhdpi" /><!-- Este icono es de 96x96 px -->
 	
+	<icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+
+	<gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />
+	
 	<preference name="splash-screen-duration" value="10000"/>
 	<gap:splash src="splash/ldpi.png" gap:platform="android" gap:density="ldpi" />
 	<gap:splash src="splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
