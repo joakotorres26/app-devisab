@@ -2,8 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.devisab.DEVISAB"
-        versionCode="10" 
-        version   = "0.1.0">
+        versionCode="11" 
+        version   = "0.1.1">
 
     <!-- versionCode is optional and Android only -->
 	<preference name="phonegap-version" value="2.9.0" />
@@ -37,5 +37,9 @@
     <author href="Joaquin Torres Ruiz" email="Joslip_18@hotmail.com">
         Joaquin Torres Ruiz
     </author>
+
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
 
 </widget>
