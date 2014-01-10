@@ -43,9 +43,10 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
 
     <access origin="http://twitter.com" subdomains="true" />
-    <access origin="http://google.es" subdomains="true" />
-    <access origin="http://google.com" subdomains="true" />
     <access origin="https://twitter.com" subdomains="true" />
-    <access origin="https://google.es" subdomains="true" />
-    <access origin="https://google.com" subdomains="true" />
+    <access origin="://.googleapis.com/*" subdomains="true" />
+    <access origin="://.gstatic.com/*" subdomains="true" />
+    <access origin="://.google.com/*" subdomains="true" />
+    <access origin="://.googleusercontent.com/*" subdomains="true" />
+    <access origin="*" /> 
 </widget>
