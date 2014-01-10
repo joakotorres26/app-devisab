@@ -42,4 +42,7 @@
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
 
+    <access origin="http://twitter.com" subdomains="true" />
+    <access origin="http://google.es" subdomains="true" />
+    <access origin="http://google.com" subdomains="true" />
 </widget>
