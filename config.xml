@@ -49,4 +49,5 @@
     <access origin="://.google.com/*" subdomains="true" />
     <access origin="://.googleusercontent.com/*" subdomains="true" />
     <access origin="*" /> 
+    
 </widget>
