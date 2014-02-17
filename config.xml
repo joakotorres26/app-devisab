@@ -6,6 +6,8 @@
         version   = "0.1.2">
 
     <!-- versionCode is optional and Android only -->
+    <preference name="target-device" value="universal" />
+    <preference name="deployment-target" value="6.0" />
 	<preference name="phonegap-version" value="2.9.0" />
 	<icon src="icons/ldpi.png" gap:platform="android" gap:density="ldpi" /><!-- Este icono es de 36x36 px -->
 	<icon src="icons/mdpi.png" gap:platform="android" gap:density="mdpi" /><!-- Este icono es de 48x48 px -->
