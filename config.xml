@@ -6,6 +6,7 @@
         version   = "0.1.2">
 
     <!-- versionCode is optional and Android only -->
+    <preference name="BackupWebStorage" value="none" />
     <preference name="target-device" value="universal" />
     <preference name="deployment-target" value="6.0" />
 	<preference name="phonegap-version" value="2.9.0" />
