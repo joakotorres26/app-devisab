@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.devisab.DEVISAB"
         versionCode="12" 
-        version   = "0.1.3">
+        version   = "0.1.4">
 
     <!-- versionCode is optional and Android only -->
     <preference name="BackupWebStorage" value="none" />
