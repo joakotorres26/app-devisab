@@ -9,6 +9,45 @@
 <!-- <link rel="stylesheet" type="text/css" href="css/estilos.css"/> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript">
+    document.addEventListener("deviceready",onDeviceReady,false);
+    
+    function onSetMetadataSuccess() {
+        console.log("success setting metadata - DONE DONE DONE!")
+    }
+function onSetMetadataFail() {
+    console.log("error setting metadata")
+}
+function onGetDirectorySuccess(parent) {
+    console.log("success getting dir");
+    parent.setMetadata(onSetMetadataSuccess, onSetMetadataFail, { "com.apple.MobileBackup": 1});
+}
+function onGetDirecotryFail() {
+    console.log("error getting dir")
+}
+
+function onFileSystemSuccess(fileSystem) {
+    console.log("onFileSystemSuccess()")
+    
+    var dirEntry = fileSystem.root;
+    dirEntry.getDirectory('Backups', {create: true, exclusive: false},
+                          onGetDirectorySuccess, onGetDirecotryFail);
+                          
+}
+
+function onFileSystemFail(evt) {
+    console.log("!!!!! onFileSystem fail...")
+    console.log(evt.target.error.code);
+}
+
+/* When this function is called, PhoneGap has been initialized and is ready to roll */
+function onDeviceReady()
+{
+    
+    // this and subsequent callbacks tells iOS not to store our data in iCloud.
+    // without it they rejected our app because of the way PG 1.8 does local->tem storage
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, onFileSystemFail);
+    
+}
 $(function() {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
 		var onSuccess = function(position) {
@@ -22,7 +61,7 @@ $(function() {
 </head> 
 
 <body>
-
+    
 <!-- Home -->
 <div data-role="page" id="noticias">
     <div data-theme="a" data-role="header">
