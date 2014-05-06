@@ -42,7 +42,7 @@
     <author href="Joaquin Torres Ruiz" email="Joslip_18@hotmail.com">
         Joaquin Torres Ruiz
     </author>
-
+    <preference name="BackupWebStorage" value="none" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-targetSdkVersion" value="14" />
 
