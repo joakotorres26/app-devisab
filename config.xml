@@ -2,8 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.devisab.DEVISAB"
-        versionCode="17" 
-        version   = "0.1.7">
+        versionCode="18" 
+        version   = "0.1.8">
 
     <!-- versionCode is optional and Android only -->
     <preference name="BackupWebStorage" value="none" />
@@ -31,9 +31,7 @@
 	<gap:splash src="splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="splash/hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="splash/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-    <feature name="Device">
-    <param name="android-package" value="org.apache.cordova.Device" />
-</feature>
+    
 	
     <name>DEVISAB</name>
 
@@ -51,7 +49,9 @@
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
-
+<feature name="Device">
+    <param name="android-package" value="org.apache.cordova.Device" />
+</feature>
 
     <access origin="*" /> 
     
