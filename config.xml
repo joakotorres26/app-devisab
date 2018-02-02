@@ -31,8 +31,8 @@
 	<gap:splash src="splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="splash/hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="splash/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-    
-	
+   <gap:plugin name="cordova-plugin-device" />
+   
     <name>DEVISAB</name>
 
     <description>
@@ -49,9 +49,6 @@
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
-<feature name="Device">
-    <param name="android-package" value="org.apache.cordova.Device" />
-</feature>
 
     <access origin="*" /> 
     
