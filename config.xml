@@ -31,7 +31,7 @@
 	<gap:splash src="splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="splash/hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="splash/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-   <gap:plugin name="cordova-plugin-device" />
+   <gap:plugin name="cordova.plugin.device"/>
    
     <name>DEVISAB</name>
 
