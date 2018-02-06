@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.deviprueba" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Deviprueba</name>
+<widget id="com.devisab.DEVISAB." version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>App DEVISAB</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+       Aplicación de consulta carretera Chía - Mosquera - la Mesa - Girardot
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
